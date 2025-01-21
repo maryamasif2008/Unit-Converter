@@ -1,0 +1,98 @@
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcGYtbXUxMy1ha2U1NjkzLWFrZS1leWUtbC1qb2I1OTguanBn.jpg");
+    background-position: center center; 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+}
+
+.container {
+    width: 90%; 
+    max-width: 600px;
+    margin: 80px auto; 
+    padding: 20px;
+    background-color: transparent; 
+    border-radius: 8px;
+    box-shadow: 2px 3px 8px 8px gray;
+}
+
+h1 {
+    text-align: center;
+    color: #3d3a3a;
+    font-weight: 700;
+    font-size: 2.5rem; 
+    margin-bottom: 30px;
+}
+
+.converter {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+input, select {
+    padding: 10px;
+    width: 100%; 
+    max-width: 80%; 
+    border: 1px solid #5c5b5b;
+    border-radius: 4px;
+    font-size: 1.1rem;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.25rem; 
+    color: #333;
+}
+
+
+/* For tablets and smaller devices */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        width: 90%; 
+        margin-top: 50px; 
+    }
+
+    input, select {
+        font-size: 1rem; 
+    }
+
+    #result {
+        font-size: 1.1rem; 
+    }
+}
+
+/* For smartphones */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem; 
+    }
+
+    .container {
+        width: 95%; 
+        margin-top: 30px; 
+    }
+
+    input, select {
+        font-size: 1rem; 
+    }
+
+    #result {
+        font-size: 1.1rem; 
+    }
+}
